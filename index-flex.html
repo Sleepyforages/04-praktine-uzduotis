@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketvirta paskaita - flex</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+    
+    [class*="row-"] {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    [class*="item-"] {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid salmon;
+    }
+    
+    .item-1-1 {
+        width: 100%;
+    }
+    
+    .item-2-1,
+    .item-2-2 {
+        width: 50%;
+    }
+    
+    .item-3-1 {
+        width: 70%;
+    }
+    
+    .item-3-2 {
+        width: 30%;
+    }
+    
+    [class*="item-4"] {
+        width: 33.33%;
+    }
+    
+    .item-5-1 {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 48px;
+        color: yellow;
+    }
+    
+    p,
+    span {
+        font-size: 12px;
+        color: darkgray;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    @media screen and (max-width:720px) {
+        [class*="row-"] {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        [class*="item-"] {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row-1">
+            <div class="item-1-1">
+                <h1>Pavadinimas</h1>
+                <h2>Pavadinimas</h2>
+                <h3>Pavadinimas</h3>
+                <h4>Pavadinimas</h4>
+                <h5>Pavadinimas</h5>
+                <h6>Pavadinimas</h6>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="item-2-1">
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+
+            </div>
+            <div class="item-2-2">
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="item-3-1">
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+                <p>Tekstas Tekstas Tekstas Tekstas Tekstas</p>
+
+            </div>
+            <div class="item-3-2">
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+                <span>Tekstas Tekstas Tekstas Tekstas Tekstas</span><br>
+            </div>
+        </div>
+        <div class="row-4">
+            <div class="item-4-1">
+                <img src="meeseeks.jpg">
+            </div>
+            <div class="item-4-2">
+                <img src="https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html5-logo-for-web-development-1200x667.png">
+            </div>
+            <div class="item-4-3">
+                <img src="meeseeks.jpg">
+            </div>
+        </div>
+        <div class="row-5">
+            <div class="item-5-1">
+                <ul>
+                    <li>Pavadinimas</li>
+                    <li>Pavadinimas</li>
+                    <li>Pavadinimas</li>
+                    <li>Pavadinimas</li>
+                    <li>Pavadinimas</li>
+                    <li>Pavadinimas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
